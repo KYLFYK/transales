@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>TranSales - каталог</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+<div class="lines__wrapper">
+    <span class="line"></span>
+    <span class="line"></span>
+</div>
+<header class="header__wrapper">
+    <div class="header__logo-block">
+        <div class="header__logo-ico">
+
+        </div>
+        <div class="header__logo-text">
+            Transales
+        </div>
+    </div>
+    <nav class="header__nav-block">
+        <ul class="header__nav__list">
+            <li class="header__nav__list-item">
+                <a href="#">главная</a>
+            </li>
+            <li class="header__nav__list-item">
+                <a href="#">календарь</a>
+            </li>
+            <li class="header__nav__list-item">
+                <a href="#">акции</a>
+            </li>
+            <li class="header__nav__list-item active">
+                <a href="#">каталог</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="header__burger">
+        <span class="header__burger-span"></span>
+        <span class="header__burger-span"></span>
+        <span class="header__burger-span"></span>
+    </div>
+</header>
+<div class="main__wrapper">
+    <div class="main-search-wrapper">
+        <div class="main__val-block">
+            <div class="main__val-elem">
+                <input class="input" type="text" required>
+                <span class="placeholder">Откуда</span>
+                <img src="ico/placeholder-blue.svg" alt="" class="ico">
+            </div>
+            <div class="main__val-elem">
+                <input class="input" type="text" required>
+                <span class="placeholder">Куда</span>
+                <img src="ico/placeholder-blue.svg" alt="" class="ico">
+            </div>
+            <div class="main__val-elem">
+                <input class="input" type="text" required>
+                <span class="placeholder">Вес (кг)</span>
+                <img src="ico/weight-blue.svg" alt="" class="ico">
+            </div>
+            <div class="main__val-elem" id="val-calc1">
+                <input class="input" type="text" required id="calc-input1">
+                <span class="placeholder">Объем (м<sup>3</sup>)</span>
+                <img src="ico/volume-blue.svg" alt="" class="ico">
+                <div class="value-calculate closed" id="val-popup1">
+                    <div class="value-calculate-elem">
+                        <input type="number" placeholder=" " class="value-calculate-input value-calculate-input-s" required>
+                        <span class="placeholder-calculate-t">Длина (м)</span>
+                    </div>
+                    <div class="value-calculate-elem">
+                        <input type="number" placeholder=" " class="value-calculate-input value-calculate-input-s" required>
+                        <span class="placeholder-calculate-t">Ширина (м)</span>
+                    </div>
+                    <div class="value-calculate-elem">
+                        <input type="number" placeholder=" " class="value-calculate-input value-calculate-input-s" required>
+                        <span class="placeholder-calculate-t">Высота (м)</span>
+                    </div>
+                    <a href="#" class="value-calculate-btn" id=calcBtn1>Вычислить объем</a>
+                </div>
+            </div>
+            <div class="main__val-elem">
+                <button class="val-update">Подобрать</button>
+            </div>
+        </div>
+    </div>
+    <div class="main-utp">
+        <h1>Каталог вариантов по вашему запросу</h1>
+    </div>
+</div>
+
+<div class="search__wrapper">
+    <div class="search__filter__wrapper">
+        <div class="search__filter__mobile-block">
+            <span class="open">
+                Фильтр предложений
+            </span>
+            <span class="return">
+                Сбросить
+            </span>
+        </div>
+        <div class="search__filter-block closed">
+            <div class="close">
+
+            </div>
+            <div class="search__filter-block-list">
+                <div class="search__filter-block-elem">
+                    <input class="filter-main-input" id="filter-on" type="radio" name="filter-elem" checked>
+                    <label class="filter-main-label" for="filter-on">Дополнительные параметры</label>
+                    <div class="filter-content">
+                        <div class="filter-element">
+                            <input class="filter-node-input" id="filter-one-a" type="checkbox">
+                            <label class="filter-node-label" for="filter-one-a">
+                                Забрать груз от двери
+                                <span class="cost">
+                                    от 399 ₽
+                                </span>
+                            </label>
+                        </div>
+                        <div class="filter-element">
+                            <input class="filter-node-input" id="filter-one-b" type="checkbox">
+                            <label class="filter-node-label" for="filter-one-b">
+                                Доставка груза до двери
+                                <span class="cost">
+                                    от 1 109 ₽
+                                </span>
+                            </label>
+                        </div>
+                        <div class="filter-element">
+                            <input class="filter-node-input" id="filter-one-c" type="checkbox">
+                            <label class="filter-node-label" for="filter-one-c">
+                                Маркировка груза
+                                <span class="cost">
+                                    от 499 ₽
+                                </span>
+                            </label>
+                        </div>
+                        <div class="filter-element">
+                            <input class="filter-node-input" id="filter-one-d" type="checkbox">
+                            <label class="filter-node-label" for="filter-one-d">
+                                Паллетирование (до 3ч)
+                                <span class="cost">
+                                    от 1 299 ₽
+                                </span>
+                            </label>
+                        </div>
+                        <div class="filter-element">
+                            <input class="filter-node-input" id="filter-one-e" type="checkbox">
+                            <label class="filter-node-label" for="filter-one-e">
+                                Страхование груза
+                                <span class="cost">
+                                    от 1 199 ₽
+                                </span>
+                            </label>
+                        </div>
+                        <div class="filter-element">
+                            <input class="filter-node-input" id="filter-one-f" type="checkbox">
+                            <label class="filter-node-label" for="filter-one-f">
+                                Обрешетка
+                                <span class="cost">
+                                    от 199 ₽
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="search__filter-block-elem">
+                    <input class="filter-main-input" id="filter-tw" type="radio" name="filter-elem">
+                    <label class="filter-main-label" for="filter-tw">Цена</label>
+                    <div class="filter-content">
+                        <div class="multi-range-slider">
+                            <input type="range" id="input-left" min="0" max="100" value="25">
+                            <input type="range" id="input-right" min="0" max="100" value="75">
+
+                            <div class="slider">
+                                <div class="track"></div>
+                                <div class="range"></div>
+                                <div class="thumb left"></div>
+                                <div class="thumb right"></div>
+                                <span class="range-value right">
+                                    2 340 RUB
+                                </span>
+                                <span class="range-value left">
+                                    2 340 RUB
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="search__filter-block-elem">
+                    <input class="filter-main-input" id="filter-th" type="radio" name="filter-elem">
+                    <label class="filter-main-label" for="filter-th">Время отправления</label>
+                    <div class="filter-content">
+                        <input class="date-input" type="time" value="12:00">
+                    </div>
+                </div>
+                <div class="search__filter-block-elem">
+                    <input class="filter-main-input" id="filter-fi" type="radio" name="filter-elem">
+                    <label class="filter-main-label" for="filter-fi">Время прибытия</label>
+                    <div class="filter-content">
+                        <input class="date-input" type="time" value="12:00">
+                    </div>
+                </div>
+                <div class="search__filter-block-elem">
+                    <input class="filter-main-input" id="filter-sx" type="radio" name="filter-elem">
+                    <label class="filter-main-label" for="filter-sx">Транспортная компания</label>
+                    <div class="filter-content">
+                        <div class="filter-element all">
+                            <input class="filter-node-input" id="filter-sx-a" type="checkbox" checked>
+                            <label class="filter-node-label" for="filter-sx-a">
+                                Все
+                            </label>
+                        </div>
+                        <div class="filter-element all">
+                            <input class="filter-node-input" id="filter-sx-b" type="checkbox">
+                            <label class="filter-node-label" for="filter-sx-b">
+                                RedWings
+                            </label>
+                        </div>
+                        <div class="filter-element all">
+                            <input class="filter-node-input" id="filter-sx-c" type="checkbox">
+                            <label class="filter-node-label" for="filter-sx-c">
+                                Ural Airlines
+                            </label>
+                        </div>
+                        <div class="filter-element all">
+                            <input class="filter-node-input" id="filter-sx-d" type="checkbox">
+                            <label class="filter-node-label" for="filter-sx-d">
+                                S7 Airlines
+                            </label>
+                        </div>
+                        <div class="filter-element all">
+                            <input class="filter-node-input" id="filter-sx-e" type="checkbox">
+                            <label class="filter-node-label" for="filter-sx-e">
+                                Аэрофлот
+                            </label>
+                        </div>
+                        <div class="filter-element all">
+                            <input class="filter-node-input" id="filter-sx-f" type="checkbox">
+                            <label class="filter-node-label" for="filter-sx-f">
+                                Nordwind
+                            </label>
+                        </div>
+                        <div class="filter-element all">
+                            <input class="filter-node-input" id="filter-sx-g" type="checkbox">
+                            <label class="filter-node-label" for="filter-sx-g">
+                                Азимут
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="search__filter-block-elem">
+                    <input class="filter-main-input" id="filter-sv" type="radio" name="filter-elem">
+                    <label class="filter-main-label" for="filter-sv">Города</label>
+                    <div class="filter-content">
+                        <div class="filter-element all">
+                            <input class="filter-node-input" id="filter-sv-a" type="checkbox" checked>
+                            <label class="filter-node-label" for="filter-sv-a">
+                                Все
+                            </label>
+                        </div>
+                        <div class="filter-element">
+                            <input class="filter-node-input" id="filter-sv-b" type="checkbox">
+                            <label class="filter-node-label" for="filter-sv-b">
+                                Екатеринбург
+                            </label>
+                        </div>
+                        <div class="filter-element">
+                            <input class="filter-node-input" id="filter-sv-c" type="checkbox">
+                            <label class="filter-node-label" for="filter-sv-c">
+                                Москва
+                            </label>
+                        </div>
+                        <div class="filter-element">
+                            <input class="filter-node-input" id="filter-sv-d" type="checkbox">
+                            <label class="filter-node-label" for="filter-sv-d">
+                                Санкт-Петербург
+                            </label>
+                        </div>
+                        <div class="filter-element">
+                            <input class="filter-node-input" id="filter-sv-e" type="checkbox">
+                            <label class="filter-node-label" for="filter-sv-e">
+                                Челябинск
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search__filter-block-btns">
+                <button class="accept">Применить</button>
+                <button class="back">
+                    <span class="ico">
+
+                    </span>
+                    <span>
+                        Сбросить фильтры
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="search__active__wrapper">
+        <div class="search__active__filters">
+            <span class="open">
+                Нет активных фильтров
+            </span>
+            <span class="return">
+                Сбросить
+            </span>
+        </div>
+        <div class="search__active__offers">
+
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="footer__main">
+        <div class="footer__main-about">
+            <div class="tab">
+                <input id="tab-one" type="checkbox" name="tabs">
+                <label for="tab-one">Страны</label>
+                <div class="tab-content">
+                    <ul class="tab-content-list">
+                        <li class="tab-content-list-item">Россия</li>
+                        <li class="tab-content-list-item">Испания</li>
+                        <li class="tab-content-list-item">Германия</li>
+                        <li class="tab-content-list-item">Казахстан</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab">
+                <input id="tab-two" type="checkbox" name="tabs">
+                <label for="tab-two">Сервисы</label>
+                <div class="tab-content">
+                    <ul class="tab-content-list">
+                        <li class="tab-content-list-item">Статус груза/заявки</li>
+                        <li class="tab-content-list-item">Сроки доставки</li>
+                        <li class="tab-content-list-item">Спецпредложения</li>
+                        <li class="tab-content-list-item">Расчет стоимости</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab">
+                <input id="tab-three" type="checkbox" name="tabs">
+                <label for="tab-three">Направления</label>
+                <div class="tab-content">
+                    <ul class="tab-content-list">
+                        <li class="tab-content-list-item">Москва - Симферополь</li>
+                        <li class="tab-content-list-item">Москва - Сочи</li>
+                        <li class="tab-content-list-item">Москва - Минеральные воды</li>
+                        <li class="tab-content-list-item">Санкт-Петербург - Москва</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab">
+                <input id="tab-four" type="checkbox" name="tabs">
+                <label for="tab-four">Города</label>
+                <div class="tab-content">
+                    <ul class="tab-content-list">
+                        <li class="tab-content-list-item">Москва</li>
+                        <li class="tab-content-list-item">Санкт-Петербург</li>
+                        <li class="tab-content-list-item">Новосибирск</li>
+                        <li class="tab-content-list-item">Екатеринбург</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab">
+                <input id="tab-five" type="checkbox" name="tabs">
+                <label for="tab-five">Компании грузоперевозок</label>
+                <div class="tab-content">
+                    <ul class="tab-content-list">
+                        <li class="tab-content-list-item">Деловые линии</li>
+                        <li class="tab-content-list-item">Байкал Сервис</li>
+                        <li class="tab-content-list-item">DHL</li>
+                        <li class="tab-content-list-item">ПЭК</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__main-logo">
+
+        </div>
+    </div>
+    <div class="footer__sequr">
+        <span>
+            Все права защищены и охраняются законом
+        </span>
+        <span>
+            © 2020, Transsales — дешевые грузоперевозки
+        </span>
+    </div>
+</footer>
+<script src="js/axios.min.js"></script>
+<script src="js/search.js"></script>
+</body>
+</html>

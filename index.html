@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>TranSales - поиск грузоперевозок</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class='ts-loader-wrapper closed'>
+        <div class='ts-loader__inner'>
+            <span class='ts-loader-el'></span>
+        </div>
+    </div>
+    <div class="lines__wrapper">
+        <span class="line"></span>
+        <span class="line"></span>
+    </div>
+    <header class="header__wrapper">
+        <div class="header__logo-block">
+            <div class="header__logo-ico">
+
+            </div>
+            <div class="header__logo-text">
+                Transales
+            </div>
+        </div>
+        <nav class="header__nav-block">
+            <ul class="header__nav__list">
+                <li class="header__nav__list-item active">
+                    <a href="#">главная</a>
+                </li>
+                <li class="header__nav__list-item">
+                    <a href="#">календарь</a>
+                </li>
+                <li class="header__nav__list-item">
+                    <a href="#">акции</a>
+                </li>
+                <li class="header__nav__list-item">
+                    <a href="#">каталог</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__burger">
+            <span class="header__burger-span"></span>
+            <span class="header__burger-span"></span>
+            <span class="header__burger-span"></span>
+        </div>
+    </header>
+    <div class="main__wrapper">
+        <div class="main-utp">
+            <h1>Транспортировка вашего груза в любую точку планеты</h1>
+        </div>
+        <div class="main__find-block">
+            <div class="main__find-type">
+                <div class="main__find-type-btn car selected">
+                    <div class="ico">
+                        <svg width="17" height="11" viewBox="0 0 17 11" fill="none">
+                            <path d="M15.3799 4.5121L14.9656 2.85315C15.0789 2.82906 15.1639 2.72846 15.1639 2.60794V2.34046C15.1639 1.75971 14.6918 1.28726 14.1117 1.28726H12.2244V0.735536C12.2244 0.44976 11.9922 0.217285 11.7067 0.217285H2.08663C1.80113 0.217285 1.56888 0.44976 1.56888 0.735536V5.28275C1.56888 5.42122 1.68103 5.53352 1.81941 5.53352C1.95775 5.53352 2.06994 5.42126 2.06994 5.28275V0.735536C2.06994 0.726309 2.07741 0.718833 2.08663 0.718833H11.7067C11.7159 0.718833 11.7233 0.726309 11.7233 0.735536V5.28281C11.7233 5.42129 11.8355 5.53358 11.9739 5.53358C12.1122 5.53358 12.2244 5.42132 12.2244 5.28281V4.99853H15.1797C15.1799 4.99853 15.1801 4.9986 15.1803 4.9986C15.1806 4.9986 15.1808 4.99857 15.181 4.99857C15.5447 4.99882 15.8535 5.23773 15.9595 5.56696H15.1805C15.0422 5.56696 14.93 5.67922 14.93 5.81773V6.35269C14.93 6.78595 15.2821 7.13842 15.715 7.13842H15.9989V8.24176H15.3438C15.1287 7.61982 14.538 7.17182 13.8444 7.17182C13.1508 7.17182 12.5601 7.61982 12.345 8.24176H12.2243V6.35266C12.2243 6.21418 12.1122 6.10188 11.9738 6.10188C11.8355 6.10188 11.7233 6.21415 11.7233 6.35266V8.2417H6.52553C6.31034 7.61976 5.71969 7.17176 5.02609 7.17176C4.3325 7.17176 3.74181 7.61976 3.52666 8.2417H2.08663C2.07741 8.2417 2.06994 8.23423 2.06994 8.225V7.67331H3.15553C3.29388 7.67331 3.40606 7.56104 3.40606 7.42254C3.40606 7.28403 3.29391 7.17176 3.15553 7.17176H0.750531C0.612188 7.17176 0.5 7.28403 0.5 7.42254C0.5 7.56104 0.612156 7.67331 0.750531 7.67331H1.56891V8.225C1.56891 8.51078 1.80116 8.74325 2.08666 8.74325H3.43991C3.43984 8.74882 3.43947 8.75435 3.43947 8.75995C3.43947 9.63568 4.15125 10.3481 5.02609 10.3481C5.90094 10.3481 6.61272 9.63568 6.61272 8.75995C6.61272 8.75432 6.61234 8.74882 6.61228 8.74325H12.2582C12.2582 8.74882 12.2578 8.75435 12.2578 8.75995C12.2578 9.63568 12.9696 10.3481 13.8444 10.3481C14.7193 10.3481 15.431 9.63568 15.431 8.75995C15.431 8.75432 15.4307 8.74882 15.4306 8.74325H16.2494C16.3878 8.74325 16.5 8.63098 16.5 8.49248V5.81767C16.5 5.15728 16.0132 4.60859 15.3799 4.5121ZM12.2244 1.78877H14.1117C14.4156 1.78877 14.6628 2.03626 14.6628 2.34046V2.35717H12.2244V1.78877ZM12.2244 4.49702V2.85868H14.4505L14.8597 4.49702H12.2244ZM5.02609 9.84666C4.4275 9.84666 3.9405 9.35922 3.9405 8.76002C3.9405 8.16081 4.4275 7.67337 5.02609 7.67337C5.62469 7.67337 6.11169 8.16081 6.11169 8.76002C6.11169 9.35922 5.62469 9.84666 5.02609 9.84666ZM13.8445 9.84666C13.2459 9.84666 12.7589 9.35922 12.7589 8.76002C12.7589 8.16081 13.2459 7.67337 13.8445 7.67337C14.4431 7.67337 14.9301 8.16081 14.9301 8.76002C14.9301 9.35922 14.4431 9.84666 13.8445 9.84666ZM15.999 6.63687H15.715C15.5585 6.63687 15.4311 6.50937 15.4311 6.35266V6.06844H15.9989V6.63687H15.999Z" fill="black"/>
+                            <path d="M5.02605 8.24176C4.74055 8.24176 4.5083 8.47401 4.5083 8.75951C4.5083 9.04501 4.74055 9.27726 5.02605 9.27726C5.31155 9.27726 5.5438 9.04501 5.5438 8.75951C5.5438 8.47401 5.31155 8.24176 5.02605 8.24176Z" fill="black"/>
+                            <path d="M13.8444 8.24176C13.5589 8.24176 13.3267 8.47401 13.3267 8.75951C13.3267 9.04501 13.5589 9.27726 13.8444 9.27726C14.1299 9.27726 14.3622 9.04501 14.3622 8.75951C14.3622 8.47401 14.1299 8.24176 13.8444 8.24176Z" fill="black"/>
+                            <path d="M10.9047 7.17184H7.16362C7.02527 7.17184 6.91309 7.284 6.91309 7.42238C6.91309 7.56075 7.02524 7.67291 7.16362 7.67291H10.9047C11.0431 7.67291 11.1553 7.56075 11.1553 7.42238C11.1553 7.284 11.0431 7.17184 10.9047 7.17184Z" fill="black"/>
+                            <path d="M4.49139 6.1019H1.28471C1.14637 6.1019 1.03418 6.21405 1.03418 6.35243C1.03418 6.4908 1.14634 6.60296 1.28471 6.60296H4.49139C4.62974 6.60296 4.74192 6.4908 4.74192 6.35243C4.74192 6.21405 4.62974 6.1019 4.49139 6.1019Z" fill="black"/>
+                            <path d="M9.21177 2.69806C9.11396 2.60015 8.9553 2.60015 8.85749 2.69809L6.62961 4.92808L5.47063 3.768C5.37279 3.67006 5.21416 3.67006 5.11635 3.768C5.01851 3.86593 5.01851 4.02468 5.11635 4.12262L6.45248 5.46003C6.50139 5.50902 6.56551 5.53348 6.62961 5.53348C6.6937 5.53348 6.75786 5.50902 6.80673 5.46003L9.21174 3.05271C9.30958 2.95474 9.30958 2.796 9.21177 2.69806Z" fill="black"/>
+                        </svg>
+                    </div>
+                    <div class="text">
+                        Автоперевозка
+                    </div>
+                </div>
+                <div class="main__find-type-btn plane">
+                    <div class="ico">
+                        <svg width="12" height="9" viewBox="0 0 12 9" fill="none">
+                            <path d="M1.43051 5.39533C1.32721 5.44384 1.28163 5.56598 1.32767 5.67038L1.79953 6.68431C1.82272 6.7348 1.86501 6.77411 1.91703 6.7935C1.93981 6.80178 1.96398 6.80606 1.98828 6.80606C2.01869 6.80632 2.0487 6.79981 2.07635 6.78726L5.64153 5.12042L5.31861 8.50005C5.31238 8.56657 5.33799 8.63198 5.3877 8.67642C5.54401 8.80593 5.7388 8.87968 5.94147 8.88632C5.99736 8.88626 6.05292 8.87922 6.1071 8.86542C6.39652 8.78982 6.62093 8.53167 6.77402 8.09077L8.17702 3.93234L10.9557 2.63494C11.7736 2.25294 12.1951 1.47836 11.912 0.873769C11.7514 0.557769 11.4437 0.342807 11.092 0.300669C10.7013 0.241637 10.3019 0.303167 9.947 0.477109L6.74039 1.98217L3.29277 0.632381C2.85859 0.468694 2.51473 0.472902 2.27357 0.647172C2.07123 0.813356 1.9561 1.06316 1.96103 1.32512C1.96313 1.39158 1.99656 1.45305 2.0512 1.49104L4.37271 3.08847L3.0432 3.71823L0.813832 3.15138C0.722479 3.1289 0.627383 3.17011 0.581083 3.25215L0.025414 4.2534C-0.00341692 4.30645 -0.00794843 4.36943 0.0130016 4.42609C0.0338203 4.48283 0.0780846 4.52772 0.134499 4.54942L1.78495 5.23171L1.43051 5.39533ZM2.39086 1.22021C2.40321 1.13146 2.44807 1.05067 2.51676 0.993477C2.63635 0.907361 2.85446 0.919983 3.14592 1.02911L6.21618 2.22777L4.81522 2.88271L2.39086 1.22021ZM0.503522 4.25136L0.868407 3.60273L3.01378 4.13586C3.06002 4.14756 3.10881 4.14316 3.15229 4.12337L10.1253 0.863317C10.4025 0.726451 10.7147 0.676622 11.0208 0.720535C11.2354 0.740322 11.4266 0.864303 11.5325 1.05218C11.7085 1.43011 11.3625 1.98217 10.7774 2.25505L8.36149 3.38869L8.50834 2.95403C8.54545 2.84221 8.48483 2.72139 8.37312 2.68431C8.26127 2.64724 8.14063 2.70791 8.10359 2.81973L6.37761 7.96054C6.27483 8.25241 6.1469 8.42669 6.00432 8.46435C5.91599 8.48138 5.82457 8.46402 5.74845 8.41617L6.16791 4.00781C6.17888 3.89191 6.09396 3.78903 5.97805 3.77805C5.86227 3.76694 5.75949 3.85207 5.74845 3.96797L5.6835 4.64178L2.08469 6.32111L1.78916 5.69135L2.38042 5.41433C2.45654 5.38074 2.5056 5.3054 2.5056 5.22224C2.5056 5.13902 2.45654 5.06368 2.38042 5.03016L0.503522 4.25136Z" fill="black"/>
+                        </svg>
+                    </div>
+                    <div class="text">
+                        Авиаперевозка
+                    </div>
+                </div>
+            </div>
+            <div class="main__find-input">
+                <input type="text" placeholder="Найти мой груз">
+                <div class="ico">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <g clip-path="url(#clip0)">
+                            <path d="M7.04606 0C3.16097 0 0 3.16097 0 7.04606C0 10.9314 3.16097 14.0921 7.04606 14.0921C10.9314 14.0921 14.0921 10.9314 14.0921 7.04606C14.0921 3.16097 10.9314 0 7.04606 0ZM7.04606 12.7913C3.87816 12.7913 1.30081 10.214 1.30081 7.04609C1.30081 3.87819 3.87816 1.30081 7.04606 1.30081C10.214 1.30081 12.7913 3.87816 12.7913 7.04606C12.7913 10.214 10.214 12.7913 7.04606 12.7913Z" fill="#057DFF"/>
+                            <path d="M15.8095 14.8898L12.0805 11.1608C11.8264 10.9067 11.4149 10.9067 11.1608 11.1608C10.9067 11.4146 10.9067 11.8266 11.1608 12.0804L14.8898 15.8095C15.0168 15.9365 15.1831 16 15.3496 16C15.5159 16 15.6824 15.9365 15.8095 15.8095C16.0636 15.5556 16.0636 15.1436 15.8095 14.8898Z" fill="#057DFF"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0">
+                                <rect width="16" height="16" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <form id='mainForm' class="main__val-block">
+            <div class="main__val-elem">
+                <input name='from' class="input autocompleteTargetCity" type="text" autocomplete='off' required>
+                <span class="placeholder">Откуда</span>
+                <img src="ico/placeholder-blue.svg" alt="" class="ico">
+                <div class='ts-form__autocomplete closed'>
+                </div>
+            </div>
+            <div class="main__val-elem">
+                <input name='to' class="input autocompleteTargetCity" type="text" autocomplete='off' required>
+                <span class="placeholder">Куда</span>
+                <img src="ico/placeholder-blue.svg" alt="" class="ico">
+                <div class='ts-form__autocomplete closed'>
+                </div>
+            </div>
+            <div class="main__val-elem">
+                <input name='weight' class="input" type="text" autocomplete='off' required>
+                <span class="placeholder">Вес (кг)</span>
+                <img src="ico/weight-blue.svg" alt="" class="ico">
+            </div>
+            <div class="main__val-elem" id="val-calc">
+                <input name='length' class="input" type="text" autocomplete='off' required id="calc-input">
+                <span class="placeholder">Объем (м<sup>3</sup>)</span>
+                <img src="ico/volume-blue.svg" alt="" class="ico">
+                <div class="value-calculate closed l-w-h--calc" id="val-popup">
+                    <div class="value-calculate-elem">
+                        <input type="number" placeholder=" " class="value-calculate-input" autocomplete='off' required>
+                        <span class="placeholder-calculate-t">Длина (м)</span>
+                    </div>
+                    <div class="value-calculate-elem">
+                        <input type="number" placeholder=" " class="value-calculate-input" autocomplete='off' required>
+                        <span class="placeholder-calculate-t">Ширина (м)</span>
+                    </div>
+                    <div class="value-calculate-elem">
+                        <input type="number" placeholder=" " class="value-calculate-input" autocomplete='off' required>
+                        <span class="placeholder-calculate-t">Высота (м)</span>
+                    </div>
+                    <a href="#" class="value-calculate-btn" id=calcBtn>Вычислить объем</a>
+                </div>
+            </div>
+        </form>
+        <div class="main__btn-block">
+            <button type='submit' class="main__btn-elem find">Найти варианты</button>
+            <div class="main__btn-elem see-spec">
+                <a href="#">
+                    <span>
+                        Смотреть спецпредложения
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="steps__wrapper">
+        <h2 class="title">
+            Как происходит перевозка
+        </h2>
+        <div class="steps__list">
+            <div class="steps__item">
+                <div class="title">Подбор вариантов по выбранным параметрам</div>
+                <div class="text_img">Вы вводите данные, выбираете самый подходящий для вас способ.</div>
+                <img class="steps__item-img" src="img/photo-1.png">
+            </div>
+            <div class="steps__item">
+                <div class="title">Подбор вариантов по выбранным параметрам</div>
+                <div class="text_img">Вы вводите данные, выбираете самый подходящий для вас способ.</div>
+                <img class="steps__item-img" src="img/photo-2.png">
+            </div>
+            <div class="steps__item">
+                <div class="title">Подбор вариантов по выбранным параметрам</div>
+                <div class="text_img">Вы вводите данные, выбираете самый подходящий для вас способ.</div>
+                <img class="steps__item-img" src="img/photo-3.png">
+            </div>
+            <div class="steps__item">
+                <div class="title">Подбор вариантов по выбранным параметрам</div>
+                <div class="text_img">Вы вводите данные, выбираете самый подходящий для вас способ.</div>
+                <img class="steps__item-img" src="img/photo-4.png">
+            </div>
+        </div>
+    </div>
+    <div class="specs__wrapper">
+        <h2 class="title">
+            Спецпредложения
+        </h2>
+        <div class="specs__block">
+            <div class="main__val-block">
+                <div class="main__val-elem">
+                    <input class="input" type="text" required>
+                    <span class="placeholder">Откуда</span>
+                    <img src="ico/placeholder-blue.svg" alt="" class="ico">
+                </div>
+                <div class="main__val-elem">
+                    <input class="input" type="text" required>
+                    <span class="placeholder">Куда</span>
+                    <img src="ico/placeholder-blue.svg" alt="" class="ico">
+                </div>
+                <div class="main__val-elem">
+                    <input class="input" type="text" required>
+                    <span class="placeholder">Вес (кг)</span>
+                    <img src="ico/weight-blue.svg" alt="" class="ico">
+                </div>
+                <div class="main__val-elem" id="val-calc1">
+                    <input class="input" type="text" required id="calc-input1">
+                    <span class="placeholder">Объем (м<sup>3</sup>)</span>
+                    <img src="ico/volume-blue.svg" alt="" class="ico">
+                    <div class="value-calculate closed" id="val-popup1">
+                        <div class="value-calculate-elem">
+                            <input type="number" placeholder=" " class="value-calculate-input value-calculate-input-s" required>
+                            <span class="placeholder-calculate-t">Длина (м)</span>
+                        </div>
+                        <div class="value-calculate-elem">
+                            <input type="number" placeholder=" " class="value-calculate-input value-calculate-input-s" required>
+                            <span class="placeholder-calculate-t">Ширина (м)</span>
+                        </div>
+                        <div class="value-calculate-elem">
+                            <input type="number" placeholder=" " class="value-calculate-input value-calculate-input-s" required>
+                            <span class="placeholder-calculate-t">Высота (м)</span>
+                        </div>
+                        <a href="#" class="value-calculate-btn" id=calcBtn1>Вычислить объем</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="specs__btn">
+                <span>Подобрать</span>
+            </a>
+            <div class="specs__list">
+                <div class="specs__list-item car">
+                    <div class="from-to">
+                        <span>Екатеринбург</span>
+                        <span>Москва</span>
+                    </div>
+                    <div class="date">14 ноября - 24 декабря</div>
+                    <div class="message">Понижена на 12%</div>
+                    <div class="message-text">Стоимость на перевозку</div>
+                    <a href="#" class="btn">Подробнее</a></div>
+                <div class="specs__list-item avia">
+                    <div class="from-to">
+                        <span>Екатеринбург</span>
+                        <span>Уфа</span>
+                    </div>
+                    <div class="date">23 ноября</div>
+                    <div class="message">Понижена на 21%</div>
+                    <div class="message-text">Стоимость на авиаперевозку</div>
+                    <a href="#" class="btn">Заказать перевозку</a></div>
+                <div class="specs__list-item car">
+                    <div class="from-to">
+                        <span>По всей России</span>
+                    </div>
+                    <div class="date">1 января - 20 января</div>
+                    <div class="message">Понижена на 6%</div>
+                    <div class="message-text">Стоимость на перевозку</div>
+                    <a href="#" class="btn">Подробнее</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="find__wrapper">
+        <h2 class="title">
+            Поиск вашего груза
+        </h2>
+        <div class="find__block">
+            <div class="main__val-elem">
+                <input class="input" type="text" required>
+                <span class="placeholder">Введите номер вашего груза</span>
+            </div>
+            <button type="submit" class="find__btn">
+                <span class="ico"></span>
+                <span>Найти</span>
+            </button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer__main">
+            <div class="footer__main-about">
+                <div class="tab">
+                    <input id="tab-one" type="checkbox" name="tabs">
+                    <label for="tab-one">Страны</label>
+                    <div class="tab-content">
+                        <ul class="tab-content-list">
+                            <li class="tab-content-list-item">Россия</li>
+                            <li class="tab-content-list-item">Испания</li>
+                            <li class="tab-content-list-item">Германия</li>
+                            <li class="tab-content-list-item">Казахстан</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input id="tab-two" type="checkbox" name="tabs">
+                    <label for="tab-two">Сервисы</label>
+                    <div class="tab-content">
+                        <ul class="tab-content-list">
+                            <li class="tab-content-list-item">Статус груза/заявки</li>
+                            <li class="tab-content-list-item">Сроки доставки</li>
+                            <li class="tab-content-list-item">Спецпредложения</li>
+                            <li class="tab-content-list-item">Расчет стоимости</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input id="tab-three" type="checkbox" name="tabs">
+                    <label for="tab-three">Направления</label>
+                    <div class="tab-content">
+                        <ul class="tab-content-list">
+                            <li class="tab-content-list-item">Москва - Симферополь</li>
+                            <li class="tab-content-list-item">Москва - Сочи</li>
+                            <li class="tab-content-list-item">Москва - Минеральные воды</li>
+                            <li class="tab-content-list-item">Санкт-Петербург - Москва</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input id="tab-four" type="checkbox" name="tabs">
+                    <label for="tab-four">Города</label>
+                    <div class="tab-content">
+                        <ul class="tab-content-list">
+                            <li class="tab-content-list-item">Москва</li>
+                            <li class="tab-content-list-item">Санкт-Петербург</li>
+                            <li class="tab-content-list-item">Новосибирск</li>
+                            <li class="tab-content-list-item">Екатеринбург</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab">
+                    <input id="tab-five" type="checkbox" name="tabs">
+                    <label for="tab-five">Компании грузоперевозок</label>
+                    <div class="tab-content">
+                        <ul class="tab-content-list">
+                            <li class="tab-content-list-item">Деловые линии</li>
+                            <li class="tab-content-list-item">Байкал Сервис</li>
+                            <li class="tab-content-list-item">DHL</li>
+                            <li class="tab-content-list-item">ПЭК</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__main-logo">
+            </div>
+        </div>
+        <div class="footer__sequr">
+            <span>
+                Все права защищены и охраняются законом
+            </span>
+            <span>
+                © 2020, Transsales — дешевые грузоперевозки
+            </span>
+        </div>
+    </footer>
+    <script src="js/axios.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
